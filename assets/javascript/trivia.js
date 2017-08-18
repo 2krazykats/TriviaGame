@@ -4,24 +4,30 @@ $(document).ready(function() {
 
 // VARIABLES
     //variables for the HTML elements
-    var quizContainer = $("#quizQuestion").getElementById("quizQuestion");
-    var resultsContainer = $("#result").getElementById("")
-    var submitButton = $("#submitBtn")
+    // var quizContainer = $("#quizQuestion").getElementById("quizQuestion");
+    // var resultsContainer = $("#result").getElementById("")
+    // var submitButton = $("#submitBtn")
 
     const questions = [
-        {"question": "What is an avergate watermelon's weight in water content?",
-         "answers": {
-             "a": "30%"
-             "b": "50%"
-             "c": "70%"
-             "d": "90%"
+        {question: "What is an average watermelon's weight in water content?",
+         answers: {
+             a: "30%",
+             b: "50%",
+             c: "70%",
+             d: "90%"
             },
         correctAnswer: "d"
         },
-        {
-            
+        {question: "How fast does a human sneeze travel?",
+         answers: {
+             a: "30 mph",
+             b: "90 mph",
+             c: "100 mph",
+             d: "120 mph"
+            },
+        correctAnswer: "c"
         }
-    ]
+    ];
 
 console.log("print this");
 console.log(JSON.stringify(questions));
@@ -44,6 +50,11 @@ console.log(JSON.stringify(questions));
 
     }
 
+    // Function to start the timer
+    function timerCall() {
+
+    }
+
 // MAIN SECTION OF CODE
     createQuiz();
 
@@ -51,4 +62,4 @@ console.log(JSON.stringify(questions));
     $("#submitBtn").on("click", showAnswer);
 
     // At the end of the quiz, we want to show the results
-}
+})
