@@ -1,0 +1,45 @@
+
+
+header {
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    font-size: 5em;
+    color: purple;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+#directions {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    margin: 5%;
+}
+
+.countDownDiv, #directions {
+    text-align: center;
+}
+
+.question{
+    font-family: 'Merriweather', serif;
+    margin-left:15%;
+}
+
+
+.answerInput {
+    margin-left:15%;
+}
+
+#result {
+    text-align: center;
+    color: rgb(0,0,160);
+}
+
+#submitBtn {
+        margin-left:25%;
+}
+
+
+#tryAgainBtn {
+    display: none;
+    align-items: center;
+    margin-left:40%;
+}

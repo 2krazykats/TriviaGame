@@ -35,7 +35,7 @@ console.log(JSON.stringify(questions));
 
     // Function to create the quiz questions
     function createQuiz() {
-
+        var
     }
 
 

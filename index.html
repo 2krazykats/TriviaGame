@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Trivia Game</title>
+        <title>Pointless Trivia Game</title>
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -10,28 +10,73 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Merriweather">
+
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="assets/javascript/trivia.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
 
     </head>
 
     <body>
-        <div id="quizQuestion"></div>
+        <header>Totally Pointless Trivia Game</header>
+        <div class="row" id="directions">Answer the questions in 60 seconds or less and find out how much useless knowledge you know!</div>
+
+        <div class="row countDownDiv">   </div>
+
+
+        <div id="quizQuestions">
+            <ol class=quizContainer">
+                <li>
+                    <p class="question">1. What is an average watermelon's water weight?</p>
+                    <ul class="btn-group answerInput" data-toggle="buttons">
+                        <li>
+                            <input type="radio"  id="Q1a" name="qRadio">
+                            <label for="Q1a">30%</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Q1b" name="qRadio">
+                            <label for="Q1b">50%</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Q1c" name="qRadio">
+                            <label for="Q1c">70%</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Q1d" name="qRadio">
+                            <label for="Q1d">90%</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="question">2. How fast does a human sneeze travel?</p>
+                    <ul class="btn-group answerInput" data-toggle="buttons">
+                        <li>
+                            <input type="radio" id="Q2a" name="qRadio2">
+                            <label for="Q2a">20 mph</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Q2b" name="qRadio2">
+                            <label for="Q2b">50 mph</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Q2c" name="qRadio2">
+                            <label for="Q2c">100 mph</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="Q2d" name="qRadio2">
+                            <label for="Q2d">120 mph</label>
+                        </li>
+                    </ul>
+                </li>
+
+            </ol>
+        </div>
         <button id="submitBtn" type="button" name="button" class="btn">Submit</button>
-        <div class="result">  </div>
+        <div id="result">   </div>
+        <button type="button" id="tryAgainBtn" class="btn" style="display:none">Try Again!</button>
 
-        <!-- <script type="text/javascript">
-        var cars = [
-      { "name": "Jim's Ford Focus",       "color": "white", "isDamaged": true,  "wheels": 4 },
-      { "name": "Bob's Suzuki Swift",     "color": "green", "isDamaged": false, "wheels": 4 },
-      { "name": "Alex's Harley Davidson", "color": "black", "isDamaged": false, "wheels": 2 }
-    ];
-    console.log("print this");
-    console.log(JSON.stringify(cars));
-
-        </script> -->
     </body>
 
 </html>
