@@ -3,7 +3,7 @@
 header {
     font-family: 'Tangerine', serif;
     text-align: center;
-    font-size: 5em;
+    font-size: 7em;
     color: purple;
     text-shadow: 4px 4px 4px #aaa;
 }
@@ -31,6 +31,7 @@ header {
 #result {
     text-align: center;
     color: rgb(0,0,160);
+    font-size: : 2em;
 }
 
 #submitBtn {
