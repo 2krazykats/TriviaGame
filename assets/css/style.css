@@ -29,9 +29,10 @@ header {
 }
 
 #result {
+    font-family: 'Mogra', cursive;
     text-align: center;
     color: rgb(0,0,160);
-    font-size: : 2em;
+    font-size: 14px;
 }
 
 #submitBtn {
@@ -43,4 +44,5 @@ header {
     display: none;
     align-items: center;
     margin-left:45%;
+    margin-bottom: 5%;
 }
